@@ -1,0 +1,17 @@
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\bin\Debug\netcoreapp2.2\REST_EF_MVC.web.deps.json
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\bin\Debug\netcoreapp2.2\REST_EF_MVC.web.runtimeconfig.json
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\bin\Debug\netcoreapp2.2\REST_EF_MVC.web.runtimeconfig.dev.json
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\bin\Debug\netcoreapp2.2\REST_EF_MVC.web.dll
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\bin\Debug\netcoreapp2.2\REST_EF_MVC.web.pdb
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\bin\Debug\netcoreapp2.2\REST_EF_MVC.dll
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\bin\Debug\netcoreapp2.2\REST_EF_MVC.pdb
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\obj\Debug\netcoreapp2.2\REST_EF_MVC.web.csprojAssemblyReference.cache
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\obj\Debug\netcoreapp2.2\REST_EF_MVC.web.csproj.CoreCompileInputs.cache
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\obj\Debug\netcoreapp2.2\REST_EF_MVC.web.RazorAssemblyInfo.cache
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\obj\Debug\netcoreapp2.2\REST_EF_MVC.web.RazorAssemblyInfo.cs
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\obj\Debug\netcoreapp2.2\REST_EF_MVC.web.AssemblyInfoInputs.cache
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\obj\Debug\netcoreapp2.2\REST_EF_MVC.web.AssemblyInfo.cs
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\obj\Debug\netcoreapp2.2\REST_EF_MVC.web.RazorTargetAssemblyInfo.cache
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\obj\Debug\netcoreapp2.2\REST_EF_MVC.web.csproj.CopyComplete
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\obj\Debug\netcoreapp2.2\REST_EF_MVC.web.dll
+C:\_dev\DOT_2019\REST_EF_MVC\REST_EF_MVC.web\obj\Debug\netcoreapp2.2\REST_EF_MVC.web.pdb
