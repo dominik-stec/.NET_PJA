@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/dominikstec/Documents/GitHub/DOT_PJATK/dotNET_ASP_REST_EF/Angular_SPA/Angular_SPA.csproj": {}
+  },
+  "projects": {
+    "/Users/dominikstec/Documents/GitHub/DOT_PJATK/dotNET_ASP_REST_EF/Angular_SPA/Angular_SPA.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dominikstec/Documents/GitHub/DOT_PJATK/dotNET_ASP_REST_EF/Angular_SPA/Angular_SPA.csproj",
+        "projectName": "Angular_SPA",
+        "projectPath": "/Users/dominikstec/Documents/GitHub/DOT_PJATK/dotNET_ASP_REST_EF/Angular_SPA/Angular_SPA.csproj",
+        "packagesPath": "/Users/dominikstec/.nuget/packages/",
+        "outputPath": "/Users/dominikstec/Documents/GitHub/DOT_PJATK/dotNET_ASP_REST_EF/Angular_SPA/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dominikstec/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[3.1.28, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[3.1.28, 3.1.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

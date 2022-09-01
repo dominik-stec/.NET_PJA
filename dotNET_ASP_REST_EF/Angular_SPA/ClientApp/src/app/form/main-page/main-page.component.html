@@ -1,0 +1,43 @@
+<!--template-->
+<div class="container bg-light">
+  <div class="row">
+    <div class="col bg-dark rounded">
+      <h1 style="color:antiquewhite; text-align:center; font-weight:200">firma przewozowa <strong><em>BusPass</em></strong></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <br />
+      {{ timer | date:'fullDate' }}
+      <br />
+      {{ timer | date:'fullTime' }}
+    </div>
+    <div class="col">
+      <img src="../../assets/bus-logo.jpg" alt="BusPass-logo" class="img-fluid rounded-circle float-right img-thumbnail" style="width: 60%; height: 60%" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col d-flex justify-content-center align-items-start">
+
+      <!--angular-->
+      <app-start-login></app-start-login>
+
+
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="col bg-dark rounded">
+      <p style="text-align:center; font-weight:400; color:antiquewhite">End of page</p>
+    </div>
+  </div>
+</div>
+
+
+

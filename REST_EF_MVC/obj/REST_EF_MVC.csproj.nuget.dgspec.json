@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/dominikstec/Documents/GitHub/DOT_PJATK/REST_EF_MVC/REST_EF_MVC.csproj": {}
+  },
+  "projects": {
+    "/Users/dominikstec/Documents/GitHub/DOT_PJATK/REST_EF_MVC/REST_EF_MVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dominikstec/Documents/GitHub/DOT_PJATK/REST_EF_MVC/REST_EF_MVC.csproj",
+        "projectName": "REST_EF_MVC",
+        "projectPath": "/Users/dominikstec/Documents/GitHub/DOT_PJATK/REST_EF_MVC/REST_EF_MVC.csproj",
+        "packagesPath": "/Users/dominikstec/.nuget/packages/",
+        "outputPath": "/Users/dominikstec/Documents/GitHub/DOT_PJATK/REST_EF_MVC/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dominikstec/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+
+
+
+  <input type="button" value="rejestracja" class="btn btn-primary" (click)="registerToggle()" *ngIf="!showDiv">
+  <input type="button" value="wstecz" class="btn btn-primary" (click)="registerToggle()" *ngIf="showDiv">
+
+
+  <div *ngIf="showDiv">
+
+    <app-register-form></app-register-form>
+
+    
+  </div>
+
+

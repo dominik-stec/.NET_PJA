@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{B32D0532-C577-4C78-A73A-9C394E932BB1}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="REST_EF_MVC.web/Properties/launchSettings.json">
+    <Files>
+      <File FileName="REST_EF_MVC/Controllers/IPersonsRepository.cs" Line="1" Column="1" />
+      <File FileName="REST_EF_MVC/Controllers/PersonsRepository.cs" Line="1" Column="1" />
+      <File FileName="REST_EF_MVC/Model/Person.cs" Line="1" Column="1" />
+      <File FileName="REST_EF_MVC/Model/PersonContext.cs" Line="1" Column="1" />
+      <File FileName="REST_EF_MVC/Program.cs" Line="1" Column="1" />
+      <File FileName="REST_EF_MVC.web/Controllers/PersonsController.cs" Line="1" Column="1" />
+      <File FileName="REST_EF_MVC.web/Controllers/ValuesController.cs" Line="1" Column="1" />
+      <File FileName="REST_EF_MVC.web/Properties/launchSettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="REST_EF_MVC" expanded="True">
+            <Node name="REST_EF_MVC" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Model" expanded="True" />
+            </Node>
+            <Node name="REST_EF_MVC.web" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="wwwroot" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.REST__EF__MVC PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

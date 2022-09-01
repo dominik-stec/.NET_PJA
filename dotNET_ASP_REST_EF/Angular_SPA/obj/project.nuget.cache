@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "MMcmGHslPIGIvZvXS9MjYwwr7gODk8Hfj+hRpfeQBdlKsAbLOSIerr5w88LCj+YIvQjZs1f+w4IFNk86Kqb6bQ==",
+  "success": true,
+  "projectFilePath": "/Users/dominikstec/Documents/GitHub/DOT_PJATK/dotNET_ASP_REST_EF/Angular_SPA/Angular_SPA.csproj",
+  "expectedPackageFiles": [
+    "/Users/dominikstec/.nuget/packages/microsoft.aspnetcore.nodeservices/3.1.28/microsoft.aspnetcore.nodeservices.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.aspnetcore.spaservices/3.1.28/microsoft.aspnetcore.spaservices.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.aspnetcore.spaservices.extensions/3.1.28/microsoft.aspnetcore.spaservices.extensions.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.configuration/3.1.28/microsoft.extensions.configuration.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.28/microsoft.extensions.configuration.abstractions.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.configuration.binder/3.1.28/microsoft.extensions.configuration.binder.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.28/microsoft.extensions.dependencyinjection.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.28/microsoft.extensions.dependencyinjection.abstractions.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.28/microsoft.extensions.fileproviders.abstractions.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.fileproviders.physical/3.1.28/microsoft.extensions.fileproviders.physical.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.filesystemglobbing/3.1.28/microsoft.extensions.filesystemglobbing.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.logging/3.1.28/microsoft.extensions.logging.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.28/microsoft.extensions.logging.abstractions.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.logging.configuration/3.1.28/microsoft.extensions.logging.configuration.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.logging.console/3.1.28/microsoft.extensions.logging.console.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.options/3.1.28/microsoft.extensions.options.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.options.configurationextensions/3.1.28/microsoft.extensions.options.configurationextensions.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.extensions.primitives/3.1.28/microsoft.extensions.primitives.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.28/microsoft.netcore.app.host.osx-x64.3.1.28.nupkg.sha512",
+    "/Users/dominikstec/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

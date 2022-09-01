@@ -1,0 +1,93 @@
+<ng-template #userNotExist>
+
+    <div *ngIf="goBack">
+        <div class="alert alert-danger">Nieporawne dane logowania</div>
+          <br/>
+          <br/>
+  </div>
+</ng-template>
+
+<ng-template #afterLoginTemplate>
+
+  <div *ngIf="isUserExist; then userExist else userNotExist"></div>
+
+  <br />
+  <br />
+  <div *ngIf="goBack">
+    <button (click)="backClicked()" class="btn btn-info"  >Wstecz</button>
+</div>
+</ng-template>
+
+<ng-template #userExist> 
+    <div class="alert alert-success">
+     <br />
+      Zalogowano poprawnie uzytkownika  
+      <br />
+      <br />
+      {{ nameVal }} {{ surnameVal }}
+      <br />
+      <br />
+    </div>
+    </ng-template>
+
+<div *ngIf="beforeLogin; else afterLoginTemplate">
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" *ngIf="showLogin">
+
+  <label>
+    login:
+    <input type="text" formControlName="login" class="form-control" whiteSpace placeholder="login">
+  </label>
+
+  <div *ngIf="login.invalid && (login.dirty || login.touched)"
+       class="alert alert-danger">
+
+    <div *ngIf="login.errors.required">
+      pole login jest wymagane
+    </div>
+
+    <div *ngIf="login.errors.minlength">
+      login powinien skladac sie conajmniej z 4 znakow
+    </div>
+
+    <div *ngIf="login.errors.whiteSpace">
+      pole login nie moze zawierac spacji
+    </div>
+
+  </div>
+
+  <br />
+
+  <label>
+    haslo:
+    <input type="password" formControlName="password" class="form-control" whiteSpace placeholder="haslo">
+  </label>
+
+  <div *ngIf="password.invalid && (password.dirty || password.touched)"
+       class="alert alert-danger">
+
+    <div *ngIf="password.errors.required">
+      pole haslo jest wymagane
+    </div>
+
+    <div *ngIf="password.errors.minlength">
+      pole haslo powinno skladac sie conajmniej z 6 znakow
+    </div>
+
+    <div *ngIf="password.errors.whiteSpace">
+      pole nie moze zawierac spacji
+    </div>
+
+  </div>
+
+  <br />
+
+  <button class="btn btn-info" type="submit" [disabled]="!loginForm.valid">logowanie</button>
+
+  <p></p>
+</form>
+
+<app-register (loginToggle)="onToggle($event)"></app-register>
+
+
+</div>
