@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ASP_REST.Model;
+using System.Net.Http;
+using System.Collections;
 
 namespace ASP_REST.Controllers
 {
@@ -35,6 +38,21 @@ namespace ASP_REST.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost]
+        public IEnumerable<Login> Post()
+        {
+      
+            return Enumerable.Range(1, 5).Select(index => new Login
+            {
+                login = index.ToString(),
+                passwd = (index + 5).ToString()
+            })
+         .ToArray();
+
+
+        }
+
     }
 }
 
