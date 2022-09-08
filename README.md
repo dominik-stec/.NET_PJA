@@ -148,7 +148,7 @@ Go to web browser and enter in adress
 http://localhost:4200
 ```
 
-<img src="images/web_for_init.png" width="300"/>
+<img src="images/web_form_init.png" width="300"/>
 
 
 As first we need to register user in system use fields with personal user data. Unappropriate entries are detected and user will see typing error. After user registration process we can sign into service with given user name and password.
