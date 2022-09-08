@@ -78,8 +78,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 In this project I use template from BIU_PJATK subject for frontend of application and use .NET framework for backend implementation. I Use C# language for make REST API and communicate it with web form for register new users in application. 
 
 ### Built With
@@ -96,10 +94,10 @@ This is instructions on setting up this project locally.
 
 ### Prerequisites
 
-Microsoft Visual Studio IDE is need.
-.NET framework is required.
-Angular CLI package intall with Node Package Manager is need.
-Angular devkit package intall with Node Package Manager is need.
+Microsoft Visual Studio IDE is need. <br/>
+.NET framework is required. <br/>
+Angular CLI package intall with Node Package Manager is need. <br/>
+Angular devkit package intall with Node Package Manager is need. <br/>
 
 ### Installation
 
@@ -115,9 +113,11 @@ Angular devkit package intall with Node Package Manager is need.
    ```sh
    ng serve
    ```
+   <br/>
 4. Run project in web browser
    Default adress set in framewrok is:
    [https://localhost:4200/](https://localhost:4200/)
+   <br/>
 5. Run Visual Studio and import project from source
    ```sh
    cd DOT_PJATK/dotNET_ASP_REST_EF/
@@ -128,6 +128,7 @@ Angular devkit package intall with Node Package Manager is need.
    NET_CORE_ASP_REST_EF.sln
    ```
    in Visual Studio
+   <br/>
 6. From context menu of ASP_REST project hit 
   ```
   run project
@@ -209,7 +210,7 @@ Dominik Stec - dccstcc@gmail.com
 
 Project URL: 
 <br />
-`https://github.com/dccstcc/BIU_PJATK.git`
+`https://github.com/dccstcc/DOT_PJATK.git`
 
 
 
@@ -242,7 +243,7 @@ Project URL:
 [issues-shield]: https://img.shields.io/github/issues/dccstcc/DOT_PJATK.svg?style=for-the-badge
 [issues-url]: https://github.com/dccstcc/DOT_PJATK/issues
 [license-shield]: https://img.shields.io/badge/License-NONE-orange
-[license-url]: https://github.com/dccstcc/BIU_PJATK/blob/master/LICENSE.txt
+[license-url]: https://github.com/dccstcc/DOT_PJATK/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
