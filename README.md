@@ -29,10 +29,10 @@
     <img src="images/logo.jpg" alt="Logo" width="540" height="80">
   </a>
 
-  <h2 align="center">BIU_PJATK</h2>
+  <h2 align="center">DOT_PJATK</h2>
 
   <p align="center">
-    Rich Interfaces of User subject in PJATK
+    .NET framework project in PJATK subject
     <br />
     <a href="https://github.com/dccstcc/BIU_PJATK"><strong>Explore the docs »</strong></a>
     <br />
@@ -80,12 +80,12 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-In this project I realise Single Page Application with Angular in version 5. SPA module is representation of user authorization process with field content control against throws exceptions caused wrong keybord typing.
+In this project I use template from BIU_PJATK subject for frontend of application and use .NET framework for backend implementation. I Use C# language for make REST API and communicate it with web form for register new users in application. 
 
 ### Built With
 
 This project use technology below.
-* [![Bootstrap][bootstrap-shield]][bootstrap-url]
+* [![dotnet][dotnet-shield]][dotnet-url]
 * [![Angular][angular-shield]][angular-url]
 
 
@@ -96,24 +96,20 @@ This is instructions on setting up this project locally.
 
 ### Prerequisites
 
-NodeJS framework is required.
+Microsoft Visual Studio IDE is need.
+.NET framework is required.
 Angular CLI package intall with Node Package Manager is need.
 Angular devkit package intall with Node Package Manager is need.
-* npm
-  ```sh
-  npm install -g @angular/cli
-  npm install --save-dev @angular-devkit/build-angular
-  ```
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/dccstcc/BIU_PJATK.git
+   git clone https://github.com/dccstcc/DOT_PJATK
    ```
-2. Go to folder with Angular sources
+2. Go to folder with actual version of project frontend
    ```sh
-   cd AngularFolder
+   cd dotNET_ASP_REST_EF/Angular_SPA/ClientApp
    ```
 3. Build and run sources with Angular CLI
    ```sh
@@ -122,13 +118,54 @@ Angular devkit package intall with Node Package Manager is need.
 4. Run project in web browser
    Default adress set in framewrok is:
    [https://localhost:4200/](https://localhost:4200/)
+5. Run Visual Studio and import project from source
+   ```sh
+   cd DOT_PJATK/dotNET_ASP_REST_EF/
 
-
+   ```
+   open 
+   ```
+   NET_CORE_ASP_REST_EF.sln
+   ```
+   in Visual Studio
+6. From context menu of ASP_REST project hit 
+  ```
+  run project
+  ```
+<br />
+<img src="images/run_backend.png" width="300"/>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+After run project from Visual Studio web browser start automatically with backend data view.
+
+<img src="images/backend_init.png" width="300"/>
+
+Go to web browser and enter in adress
+```
+http://localhost:4200
+```
+
+<img src="images/web_for_init.png" width="300"/>
+
+
 As first we need to register user in system use fields with personal user data. Unappropriate entries are detected and user will see typing error. After user registration process we can sign into service with given user name and password.
+
+<img src="images/web_form_fill.png" width="300"/>
+
+It is possible not to fill all inputs because button 
+```
+rejestracja_rest_api
+```
+is active all the time. After click this button we will send data for backend rest api and will register new user in Angular storage.
+
+<img src="images/frontend_summary.png" width="300"/>
+
+Now it is need to refresh web page.
+
+<img src="images/json_output.png" width="300"/>
+
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
@@ -196,14 +233,14 @@ Project URL:
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/dccstcc/BIU_PJATK.svg?style=for-the-badge
-[contributors-url]: https://github.com/dccstcc/BIU_PJATK/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/dccstcc/BIU_PJATK.svg?style=for-the-badge
-[forks-url]: https://github.com/dccstcc/BIU_PJATK/network/members
-[stars-shield]: https://img.shields.io/github/stars/dccstcc/BIU_PJATK.svg?style=for-the-badge
-[stars-url]: https://github.com/dccstcc/BIU_PJATK/stargazers
-[issues-shield]: https://img.shields.io/github/issues/dccstcc/BIU_PJATK.svg?style=for-the-badge
-[issues-url]: https://github.com/dccstcc/BIU_PJATK/issues
+[contributors-shield]: https://img.shields.io/github/contributors/dccstcc/DOT_PJATK.svg?style=for-the-badge
+[contributors-url]: https://github.com/dccstcc/DOT_PJATK/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/dccstcc/DOT_PJATK.svg?style=for-the-badge
+[forks-url]: https://github.com/dccstcc/DOT_PJATK/network/members
+[stars-shield]: https://img.shields.io/github/stars/dccstcc/DOT_PJATK.svg?style=for-the-badge
+[stars-url]: https://github.com/dccstcc/DOT_PJATK/stargazers
+[issues-shield]: https://img.shields.io/github/issues/dccstcc/DOT_PJATK.svg?style=for-the-badge
+[issues-url]: https://github.com/dccstcc/DOT_PJATK/issues
 [license-shield]: https://img.shields.io/badge/License-NONE-orange
 [license-url]: https://github.com/dccstcc/BIU_PJATK/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
@@ -212,5 +249,5 @@ Project URL:
 
 [angular-shield]: https://img.shields.io/badge/-Angular-red
 [angular-url]: https://angular.io/
-[bootstrap-shield]: https://img.shields.io/badge/-Bootstrap-blue
-[bootstrap-url]: https://getbootstrap.com/
+[dotnet-shield]: https://img.shields.io/badge/-.NET-blue
+[dotnet-url]: https://docs.microsoft.com/pl-pl/dotnet/
