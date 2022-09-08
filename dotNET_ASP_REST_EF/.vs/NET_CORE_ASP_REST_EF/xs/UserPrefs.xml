@@ -1,20 +1,111 @@
-﻿<Properties StartupConfiguration="{F9710718-3EE7-4617-8908-229698733D0E}|Default">
+﻿<Properties StartupConfiguration="{E70448CF-6783-4019-A1E2-6195763867D9}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Angular__SPA FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ASP__REST PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASP_REST/EF/ApplicationDbContext.cs">
+    <Files>
+      <File FileName="ASP_REST/Controllers/WeatherForecastController.cs" Line="19" Column="16" />
+      <File FileName="ASP_REST/Properties/launchSettings.json" Line="18" Column="8" />
+      <File FileName="ASP_REST/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="ASP_REST/Program.cs" Line="1" Column="1" />
+      <File FileName="ASP_REST/Startup.cs" Line="44" Column="75" />
+      <File FileName="Angular_SPA/Controllers/WeatherForecastController.cs" Line="12" Column="13" />
+      <File FileName="Angular_SPA/Pages/Error.cshtml" Line="1" Column="1" />
+      <File FileName="Angular_SPA/Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Angular_SPA/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Angular_SPA/Program.cs" Line="1" Column="1" />
+      <File FileName="Angular_SPA/Startup.cs" Line="1" Column="1" />
+      <File FileName="Angular_SPA/WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="ASP_REST/WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="ASP_REST/Model/Login.cs" Line="3" Column="25" />
+      <File FileName="ASP_REST/Model/Address.cs" Line="10" Column="1" />
+      <File FileName="ASP_REST/Model/Entity.cs" Line="3" Column="25" />
+      <File FileName="ASP_REST/Model/Person.cs" Line="25" Column="1" />
+      <File FileName="ASP_REST/Model/PersonContext.cs" Line="21" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/form.module.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/main-page/main-page.component.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/register/register.component.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/register/register.component.html" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/register-form/register-form.component.html" Line="19" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/register-form/register-form.component.ts" Line="395" Column="40" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/rest-post/rest-post.component.css" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/rest-post/rest-post.component.ts" Line="19" Column="15" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/rest-post/rest-post.component.html" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/http-rest.service.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/rest.module.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/http-rest.service.spec.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/Config.ts" Line="12" Column="51" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/model/Address.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/model/Login.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/model/Model.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/model/Person.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/app-routing.module.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/app.component.css" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/app.component.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/app.component.html" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/app.module.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/main-page/main-page.component.html" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/start-login/start-login.component.html" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/white-space-validator.directive.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/rest/rest-post/rest-post.component.spec.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/environments/environment.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/app.component.spec.ts" Line="1" Column="1" />
+      <File FileName="ASP_REST/appsettings.json" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/register-form/register-form.component.css" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/angular.json" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/tsconfig.json" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/tslint.json" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/app/form/main-page/main-page.component.css" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/browserslist" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/index.html" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/main.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/karma.conf.js" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/polyfills.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/styles.css" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/test.ts" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/tsconfig.app.json" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/tsconfig.spec.json" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/src/tslint.json" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/package.json" Line="1" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/README.md" Line="28" Column="1" />
+      <File FileName="EF_Database/ApplicationDbContext.cs" Line="22" Column="1" />
+      <File FileName="Angular_SPA/ClientApp/Angular_initial_backup/node_modules/when/monitor/console.js" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="NET_CORE_ASP_REST_EF" expanded="True" selected="True">
-            <Node name="ASP_REST" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
+          <Node name="NET_CORE_ASP_REST_EF" expanded="True">
+            <Node name="Angular_SPA" expanded="True">
+              <Node name="ClientApp" expanded="True">
+                <Node name="src" expanded="True">
+                  <Node name="app" expanded="True">
+                    <Node name="form" expanded="True">
+                      <Node name="main-page" expanded="True" />
+                      <Node name="register" expanded="True" />
+                      <Node name="register-form" expanded="True" />
+                      <Node name="start-login" expanded="True" />
+                    </Node>
+                    <Node name="rest" expanded="True">
+                      <Node name="model" expanded="True" />
+                      <Node name="rest-post" expanded="True">
+                        <Node name="rest-post.component.ts" expanded="True" />
+                      </Node>
+                      <Node name="http-rest.service.ts" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
               </Node>
               <Node name="Controllers" expanded="True" />
+              <Node name="Pages" expanded="True" />
+            </Node>
+            <Node name="ASP_REST" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="EF" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -24,6 +115,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ASP__REST PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Angular__SPA PreferredExecutionTarget="/Applications/Firefox.app" />
 </Properties>

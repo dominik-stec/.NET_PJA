@@ -8,7 +8,8 @@ using Microsoft.Extensions.Logging;
 namespace Angular_SPA.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    //[Route("[controller]")]
+    [Route("database")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]

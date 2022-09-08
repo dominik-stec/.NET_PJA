@@ -15,280 +15,282 @@
   </ng-template>
 </div>
 
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" *ngIf="!registerDone; else logged">
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" *ngIf="!registerDone; else logged" method="post" action="http://localhost:5000/api/database" enctype="application/x-www-form-urlencoded">
 
-  <label for="login">
-    login:
-    <input type="text" formControlName="login" class="form-control" whiteSpace placeholder="login">
-  </label>
-
-  <div *ngIf="login.invalid && (login.dirty || login.touched)"
-       class="alert alert-danger">
-
-    <div *ngIf="login.errors.required">
-      pole login jest wymagane
-    </div>
-
-    <div *ngIf="login.errors.minlength">
-      login powinien skladac sie conajmniej z 4 znakow
-    </div>
-
-    <div *ngIf="login.errors.whiteSpace">
-      pole login nie moze zawierac spacji
-    </div>
-
-  </div>
-
-  <br />
-
-
-  <label for="password">
-    haslo:
-    <input type="password" formControlName="password" class="form-control" whiteSpace placeholder="haslo" #password1>
-  </label>
-
-  <div *ngIf="password.invalid && (password.dirty || password.touched)"
-       class="alert alert-danger">
-
-    <div *ngIf="password.errors.required">
-      pole haslo jest wymagane
-    </div>
-
-    <div *ngIf="password.errors.minlength">
-      haslo powinno skladac sie conajmniej z 6 znakow
-    </div>
-
-    <div *ngIf="password.errors.whiteSpace">
-      pole nie moze zawierac spacji
-    </div>
-
-  </div>
-
-  <br />
-
-  <label for="passwordRpt" *ngIf="!password.invalid">
-    powtorz haslo:
-    <input type="password" formControlName="passwordRpt" class="form-control" whiteSpace placeholder="powtorz haslo" pattern="{{ password1.value }}">
-  </label>
-
-  <div *ngIf="passwordRpt.invalid && (passwordRpt.dirty || passwordRpt.touched)"
-       class="alert alert-danger">
-
-    <div *ngIf="passwordRpt.errors.required">
-      pole haslo jest wymagane
-    </div>
-
-    <div *ngIf="passwordRpt.errors.whiteSpace">
-      pole nie moze zawierac spacji
-    </div>
-
-    <div *ngIf="passwordRpt.errors.pattern">
-      hasla musza byc takie same
-    </div>
-
-  </div>
-
-  <br />
-
-  <div formGroupName="user">
-
-    <label for="name">
-      imie:
-      <input type="text" formControlName="name" class="form-control" placeholder="imie">
+    <label for="login">
+        login:
+        <input type="text" formControlName="login" class="form-control" whiteSpace placeholder="login" name="login_rest">
     </label>
 
-    <br />
-
-    <label for="surname">
-      nazwisko:
-      <input type="text" formControlName="surname" class="form-control" whiteSpace placeholder="nazwisko">
-    </label>
-
-    <div *ngIf="surname.invalid && (surname.dirty || surname.touched)"
+    <div *ngIf="login.invalid && (login.dirty || login.touched)"
          class="alert alert-danger">
 
-      <div *ngIf="surname.errors.whiteSpace">
-        pole nazwisko nie moze zawierac spacji
-      </div>
-
-    </div>
-
-    <br />
-
-    <label for="age">
-      wiek:
-      <input type="text" formControlName="age" class="form-control" whiteSpace placeholder="wiek" pattern="\d*">
-    </label>
-
-    <div *ngIf="age.invalid && (age.dirty || age.touched)"
-         class="alert alert-danger">
-
-      <div *ngIf="age.errors.whiteSpace">
-        pole wiek nie moze zawierac spacji
-      </div>
-
-      <div *ngIf="age.errors.pattern">
-        pole wiek musi byc liczba calkowita
-      </div>
-
-      <div *ngIf="age.errors.maxlength">
-        pole wiek ma zbyt duza wartosc
-      </div>
-
-    </div>
-
-    <br />
-
-    <label for="gender">
-      plec:
-      <select class="form-control" formControlName="gender">
-        <option>mezczyzna</option>
-        <option>kobieta</option>
-      </select>
-    </label>
-
-    <br />
-
-    <label for="phoneCode">
-      telefon:
-      kod terytorialny <input type="tel" formControlName="phoneCode" class="form-control" whiteSpace placeholder="48" pattern="[0-9]{2}">
-    </label>
-
-    <div *ngIf="phoneCode.invalid && (phoneCode.dirty || phoneCode.touched)"
-         class="alert alert-danger">
-
-      <div *ngIf="phoneCode.errors.whiteSpace">
-        pole telefon: kod terytorialny nie moze zawierac spacji
-      </div>
-
-      <div *ngIf="phoneCode.errors.pattern">
-        pole telefon: kod terytorialny powinien skladac sie z dwoch cyfr
-      </div>
-
-    </div>
-
-    <label for="phoneNum">
-      telefon:
-      numer <input type="tel" formControlName="phoneNum" class="form-control" whiteSpace placeholder="123456789" pattern="[0-9]{9}">
-    </label>
-
-    <div *ngIf="phoneNum.invalid && (phoneNum.dirty || phoneNum.touched)"
-         class="alert alert-danger">
-
-      <div *ngIf="phoneNum.errors.whiteSpace">
-        pole telefon: numer nie moze zawierac spacji
-      </div>
-
-      <div *ngIf="phoneNum.errors.pattern">
-        pole telefon: numer powinien skladac sie z ciagu dziewieciu cyfr
-      </div>
-
-    </div>
-
-    <br />
-
-    <label for="email">
-      email:
-      <input type="email" formControlName="email" class="form-control" whiteSpace placeholder="example@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-    </label>
-
-    <div *ngIf="email.invalid && (email.dirty || email.touched)"
-         class="alert alert-danger">
-
-      <div *ngIf="email.errors.whiteSpace">
-        pole email nie moze zawierac spacji
-      </div>
-
-      <div *ngIf="email.errors.required">
-        pole email jest wymagane
-      </div>
-
-      <div *ngIf="email.errors.pattern">
-        pole email powinno byc w formacie "example@domain.com"
-      </div>
-
-    </div>
-
-    <br />
-    <br />
-    <br />
-
-    <div formGroupName="address" *ngIf="!email.invalid">
-
-      <label for="street">
-        nazwa ulicy:
-      </label>
-      <input type="text" formControlName="street" class="form-control" placeholder="ulica posesji" (blur)="streetValidation($event)" />
-
-      <div *ngIf="street.invalid && street.errors.required; then valid else noValid"></div>
-
-      <br />
-
-      <label for="building">
-        numer posesji:
-      </label>
-      <input type="text" formControlName="building" class="form-control" placeholder="numer domu" (blur)="buildingValidation($event)" />
-
-      <div *ngIf="building.invalid && building.errors.required; then valid else noValid"></div>
-
-      <br />
-
-      <label for="flatNo">
-        numer mieszkania:
-      </label>
-      <input type="text" formControlName="flatNo" class="form-control" placeholder="numer mieszkania" (blur)="flatNoValidation($event)" />
-
-      <div *ngIf="flatNo.invalid && flatNo.errors.required; then valid else noValid"></div>
-
-      <br />
-
-      <label for="city">
-        miejscowosc:
-      </label>
-      <input type="text" formControlName="city" class="form-control" placeholder="miejscowosc" (blur)="cityValidation($event)" />
-
-      <div *ngIf="city.invalid && city.errors.required; then valid else noValid"></div>
-
-      <br />
-
-      <label for="zip">
-        kod pocztowy:
-      </label>
-      <input type="text" formControlName="zip" class="form-control" placeholder="00-000"  />
-
-      <div *ngIf="zip.invalid && zip.errors.required; then valid else noValid"></div>
-
-      
-      <div *ngIf="zip.invalid && (zip.dirty || zip.touched) && zip.errors.pattern">
-        <div class="alert alert-danger">
-          pole kod pocztowy powinno miec format "00-000"
+        <div *ngIf="login.errors.required">
+            pole login jest wymagane
         </div>
-      </div>
 
-    
+        <div *ngIf="login.errors.minlength">
+            login powinien skladac sie conajmniej z 4 znakow
+        </div>
 
-      <br />
+        <div *ngIf="login.errors.whiteSpace">
+            pole login nie moze zawierac spacji
+        </div>
 
-      <label for="country">
-        kraj:
-      </label>
-      <input type="text" formControlName="country" class="form-control" placeholder="nazwa kraju" pattern="[a-zA-Z]+" (blur)="countryValidation($event)" />
-
-
-      <div *ngIf="country.invalid  && country.errors.required; then valid else noValid"></div>
-      
     </div>
-  </div>
 
-      <br />
-      <br />
+    <br />
 
 
+    <label for="password">
+        haslo:
+        <input type="password" formControlName="password" class="form-control" whiteSpace placeholder="haslo" #password1 name="password_rest">
+    </label>
 
-      <button class="btn btn-info" type="submit" [disabled]="!registerForm.valid">rejestracja</button>
+    <div *ngIf="password.invalid && (password.dirty || password.touched)"
+         class="alert alert-danger">
 
-     
-  </form>
+        <div *ngIf="password.errors.required">
+            pole haslo jest wymagane
+        </div>
+
+        <div *ngIf="password.errors.minlength">
+            haslo powinno skladac sie conajmniej z 6 znakow
+        </div>
+
+        <div *ngIf="password.errors.whiteSpace">
+            pole nie moze zawierac spacji
+        </div>
+
+    </div>
+
+    <br />
+
+    <label for="passwordRpt" *ngIf="!password.invalid">
+        powtorz haslo:
+        <input type="password" formControlName="passwordRpt" class="form-control" whiteSpace placeholder="powtorz haslo" pattern="{{ password1.value }}">
+    </label>
+
+    <div *ngIf="passwordRpt.invalid && (passwordRpt.dirty || passwordRpt.touched)"
+         class="alert alert-danger">
+
+        <div *ngIf="passwordRpt.errors.required">
+            pole haslo jest wymagane
+        </div>
+
+        <div *ngIf="passwordRpt.errors.whiteSpace">
+            pole nie moze zawierac spacji
+        </div>
+
+        <div *ngIf="passwordRpt.errors.pattern">
+            hasla musza byc takie same
+        </div>
+
+    </div>
+
+    <br />
+
+    <div formGroupName="user">
+
+        <label for="name">
+            imie:
+            <input type="text" formControlName="name" class="form-control" placeholder="imie">
+        </label>
+
+        <br />
+
+        <label for="surname">
+            nazwisko:
+            <input type="text" formControlName="surname" class="form-control" whiteSpace placeholder="nazwisko">
+        </label>
+
+        <div *ngIf="surname.invalid && (surname.dirty || surname.touched)"
+             class="alert alert-danger">
+
+            <div *ngIf="surname.errors.whiteSpace">
+                pole nazwisko nie moze zawierac spacji
+            </div>
+
+        </div>
+
+        <br />
+
+        <label for="age">
+            wiek:
+            <input type="text" formControlName="age" class="form-control" whiteSpace placeholder="wiek" pattern="\d*">
+        </label>
+
+        <div *ngIf="age.invalid && (age.dirty || age.touched)"
+             class="alert alert-danger">
+
+            <div *ngIf="age.errors.whiteSpace">
+                pole wiek nie moze zawierac spacji
+            </div>
+
+            <div *ngIf="age.errors.pattern">
+                pole wiek musi byc liczba calkowita
+            </div>
+
+            <div *ngIf="age.errors.maxlength">
+                pole wiek ma zbyt duza wartosc
+            </div>
+
+        </div>
+
+        <br />
+
+        <label for="gender">
+            plec:
+            <select class="form-control" formControlName="gender">
+                <option>mezczyzna</option>
+                <option>kobieta</option>
+            </select>
+        </label>
+
+        <br />
+
+        <label for="phoneCode">
+            telefon:
+            kod terytorialny <input type="tel" formControlName="phoneCode" class="form-control" whiteSpace placeholder="48" pattern="[0-9]{2}">
+        </label>
+
+        <div *ngIf="phoneCode.invalid && (phoneCode.dirty || phoneCode.touched)"
+             class="alert alert-danger">
+
+            <div *ngIf="phoneCode.errors.whiteSpace">
+                pole telefon: kod terytorialny nie moze zawierac spacji
+            </div>
+
+            <div *ngIf="phoneCode.errors.pattern">
+                pole telefon: kod terytorialny powinien skladac sie z dwoch cyfr
+            </div>
+
+        </div>
+
+        <label for="phoneNum">
+            telefon:
+            numer <input type="tel" formControlName="phoneNum" class="form-control" whiteSpace placeholder="123456789" pattern="[0-9]{9}">
+        </label>
+
+        <div *ngIf="phoneNum.invalid && (phoneNum.dirty || phoneNum.touched)"
+             class="alert alert-danger">
+
+            <div *ngIf="phoneNum.errors.whiteSpace">
+                pole telefon: numer nie moze zawierac spacji
+            </div>
+
+            <div *ngIf="phoneNum.errors.pattern">
+                pole telefon: numer powinien skladac sie z ciagu dziewieciu cyfr
+            </div>
+
+        </div>
+
+        <br />
+
+        <label for="email">
+            email:
+            <input type="email" formControlName="email" class="form-control" whiteSpace placeholder="example@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </label>
+
+        <div *ngIf="email.invalid && (email.dirty || email.touched)"
+             class="alert alert-danger">
+
+            <div *ngIf="email.errors.whiteSpace">
+                pole email nie moze zawierac spacji
+            </div>
+
+            <div *ngIf="email.errors.required">
+                pole email jest wymagane
+            </div>
+
+            <div *ngIf="email.errors.pattern">
+                pole email powinno byc w formacie "example@domain.com"
+            </div>
+
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div formGroupName="address" *ngIf="!email.invalid">
+
+            <label for="street">
+                nazwa ulicy:
+            </label>
+            <input type="text" formControlName="street" class="form-control" placeholder="ulica posesji" (blur)="streetValidation($event)" />
+
+            <div *ngIf="street.invalid && street.errors.required; then valid else noValid"></div>
+
+            <br />
+
+            <label for="building">
+                numer posesji:
+            </label>
+            <input type="text" formControlName="building" class="form-control" placeholder="numer domu" (blur)="buildingValidation($event)" />
+
+            <div *ngIf="building.invalid && building.errors.required; then valid else noValid"></div>
+
+            <br />
+
+            <label for="flatNo">
+                numer mieszkania:
+            </label>
+            <input type="text" formControlName="flatNo" class="form-control" placeholder="numer mieszkania" (blur)="flatNoValidation($event)" />
+
+            <div *ngIf="flatNo.invalid && flatNo.errors.required; then valid else noValid"></div>
+
+            <br />
+
+            <label for="city">
+                miejscowosc:
+            </label>
+            <input type="text" formControlName="city" class="form-control" placeholder="miejscowosc" (blur)="cityValidation($event)" />
+
+            <div *ngIf="city.invalid && city.errors.required; then valid else noValid"></div>
+
+            <br />
+
+            <label for="zip">
+                kod pocztowy:
+            </label>
+            <input type="text" formControlName="zip" class="form-control" placeholder="00-000" />
+
+            <div *ngIf="zip.invalid && zip.errors.required; then valid else noValid"></div>
+
+
+            <div *ngIf="zip.invalid && (zip.dirty || zip.touched) && zip.errors.pattern">
+                <div class="alert alert-danger">
+                    pole kod pocztowy powinno miec format "00-000"
+                </div>
+            </div>
+
+
+
+            <br />
+
+            <label for="country">
+                kraj:
+            </label>
+            <input type="text" formControlName="country" class="form-control" placeholder="nazwa kraju" pattern="[a-zA-Z]+" (blur)="countryValidation($event)" />
+
+
+            <div *ngIf="country.invalid  && country.errors.required; then valid else noValid"></div>
+
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+
+
+    <button class="btn btn-info" type="submit" [disabled]="!registerForm.valid">rejestracja</button>
+    <input type="submit" class="btn btn-warning" value="rejestracja_rest_api">
+
+
+
+</form>
 
 
 

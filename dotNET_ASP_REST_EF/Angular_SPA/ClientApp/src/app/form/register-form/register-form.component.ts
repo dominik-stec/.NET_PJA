@@ -379,16 +379,32 @@ export class RegisterFormComponent implements OnInit {
     login.setPasswordRpt(this.registerForm.get('passwordRpt').value);
 
     person.setLogin(login);
-    person.setAddress(address);
+      person.setAddress(address);
 
+      let model: Model = new Model();
+      model.person = person;
+      model.address = address;
+      model.login = login;
+
+      //REST API
+      const userAction = async () => {
+          const response = await fetch('http://localhost:5000/api/database', {
+              mode: 'cors',
+              method: 'POST',
+              body: JSON.stringify(model), 
+              headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json;charset=UTF-8',
+              },
+              //credentials: "include",
+              
+          });
+          console.log('fetch');
+
+      }
+
+      userAction();
     
-    /* 
-    this.http.setQuery(person);
-    console.log(person);
-    console.log("submit");
-    //console.log(this.http.getQuery());
-    */
-
     this.model.getPersons().push(person);
 
     this.registerDone = true;

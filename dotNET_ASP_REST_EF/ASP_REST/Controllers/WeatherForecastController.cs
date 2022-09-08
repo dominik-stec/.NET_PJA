@@ -1,56 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using ASP_REST.Model;
-using System.Net.Http;
-using System.Collections;
+using Microsoft.AspNetCore.Cors;
+using Newtonsoft.Json;
 
 namespace ASP_REST.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [EnableCors]
+    [Route("/api/database")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        static IList<User> users = new List<User>();
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        [Produces("application/json")]
+        public String Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            if (users.Count() != 0)
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+                string s = JsonConvert.SerializeObject(users);
+                return s;
+            } else
+            {
+                return "Run Angular SPA and register new user by web form after that refresh page";
+            }
         }
 
+
         [HttpPost]
-        public IEnumerable<Login> Post()
+        [Consumes("application/json")]
+        public String PostAngularForm([FromBody] User user)
         {
-      
-            return Enumerable.Range(1, 5).Select(index => new Login
-            {
-                login = index.ToString(),
-                passwd = (index + 5).ToString()
-            })
-         .ToArray();
-
-
+            users.Add(user);
+            return "add new user";
         }
 
     }

@@ -1,7 +1,6 @@
 ﻿
 
-namespace ASP_REST.Model
-{
+namespace ASP_REST.Model {
     public class Person : Entity
     {
         public string name { get; set; }

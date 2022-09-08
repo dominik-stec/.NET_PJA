@@ -9,7 +9,7 @@ export class Config {
           constructor() {}
 
           getUrl() {
-               this.apiUrl = "https://localhost:44382/api/persons";
+              this.apiUrl = "http://localhost:5000/api/database";
                return this.apiUrl;
           }
        

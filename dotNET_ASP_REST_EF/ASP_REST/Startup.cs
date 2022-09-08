@@ -22,15 +22,36 @@ namespace ASP_REST
 
         public IConfiguration Configuration { get; }
 
+        //CORS
+        public String MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllers();
+
+            //CORS
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "_myAllowSpecificOrigins",
+                                  policy =>
+                                  {
+                                      policy.WithOrigins("http://localhost:5000",
+                                                          "https://localhost:5001")
+                                                        .AllowAnyHeader()
+                                                        .AllowAnyOrigin()
+                                                        .AllowAnyMethod();
+                                                                                                               
+                                  });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -40,12 +61,16 @@ namespace ASP_REST
 
             app.UseRouting();
 
+            //CORS
+            app.UseCors(MyAllowSpecificOrigins);
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }
