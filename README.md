@@ -96,8 +96,7 @@ This is instructions on setting up this project locally.
 
 Microsoft Visual Studio IDE is need. <br/>
 .NET framework is required. <br/>
-Angular CLI package intall with Node Package Manager is need. <br/>
-Angular devkit package intall with Node Package Manager is need. <br/>
+Angular CLI is need. <br/>
 
 ### Installation
 
