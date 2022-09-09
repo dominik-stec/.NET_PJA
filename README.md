@@ -34,7 +34,7 @@
   <p align="center">
     .NET framework project in PJATK subject
     <br />
-    <a href="https://github.com/dccstcc/BIU_PJATK"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/dccstcc/DOT_PJATK"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
