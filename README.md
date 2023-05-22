@@ -243,7 +243,7 @@ Project URL:
 [issues-shield]: https://img.shields.io/github/issues/dominik-stec/.NET_PJA.svg?style=for-the-badge
 [issues-url]: https://github.com/dominik-stec/.NET_PJA/issues
 [license-shield]: https://img.shields.io/badge/License-NONE-orange
-[license-url]: https://github.com/dominik-stec/.NET_PJA/blob/master/LICENSE.txt
+[license-url]: https://github.com/dominik-stec/.NET_PJA/blob/main/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
