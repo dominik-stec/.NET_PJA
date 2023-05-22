@@ -234,16 +234,16 @@ Project URL:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/dccstcc/DOT_PJATK.svg?style=for-the-badge
-[contributors-url]: https://github.com/dccstcc/DOT_PJATK/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/dccstcc/DOT_PJATK.svg?style=for-the-badge
-[forks-url]: https://github.com/dccstcc/DOT_PJATK/network/members
-[stars-shield]: https://img.shields.io/github/stars/dccstcc/DOT_PJATK.svg?style=for-the-badge
-[stars-url]: https://github.com/dccstcc/DOT_PJATK/stargazers
-[issues-shield]: https://img.shields.io/github/issues/dccstcc/DOT_PJATK.svg?style=for-the-badge
-[issues-url]: https://github.com/dccstcc/DOT_PJATK/issues
+[contributors-shield]: https://img.shields.io/github/contributors/dominik-stec/.NET_PJA.svg?style=for-the-badge
+[contributors-url]: https://github.com/dominik-stec/.NET_PJA/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/dominik-stec/.NET_PJA.svg?style=for-the-badge
+[forks-url]: https://github.com/dominik-stec/.NET_PJA/network/members
+[stars-shield]: https://img.shields.io/github/stars/dominik-stec/.NET_PJA.svg?style=for-the-badge
+[stars-url]: https://github.com/dominik-stec/.NET_PJA/stargazers
+[issues-shield]: https://img.shields.io/github/issues/dominik-stec/.NET_PJA.svg?style=for-the-badge
+[issues-url]: https://github.com/dominik-stec/.NET_PJA/issues
 [license-shield]: https://img.shields.io/badge/License-NONE-orange
-[license-url]: https://github.com/dccstcc/DOT_PJATK/blob/master/LICENSE.txt
+[license-url]: https://github.com/dominik-stec/.NET_PJA/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
